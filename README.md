@@ -11,13 +11,7 @@ It enables analysts and federations to derive insights from global Olympic data 
 
 ---
 
-## 📊 Dashboard Preview
 
-![Olympic Dashboard](screenshots/Dashboard_Main.png)
-
-> Interactive filters allow users to drill down by Year, Nation, Sport, or Competitor to analyze performance.
-
----
 
 ## 🗂 Data and Scope
 
@@ -88,13 +82,8 @@ It enables analysts and federations to derive insights from global Olympic data 
 ### 👤 Top Medal-Winning Athletes (Stacked Chart by Competitor)
 - **Michael Phelps** leads with the highest number of total medals, mostly **gold**.
 - Other athletes show mixed medal stacks (Gold/Silver/Bronze).
-
-> Phelps alone has more medals than many countries.
+- Phelps alone has more medals than many countries.
 
 ---
 
-### 📈 Historical Performance Trend (Line Chart)
-- Medal volume grows consistently from **1896 → present**
-- Sharp medal increase after **1980** due to:
-  - More count
 
