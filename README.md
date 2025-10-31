@@ -1,22 +1,100 @@
 
+# Olympic Games Analysis (Power BI Dashboard)
 
-# Olympics-Games-Analysis
+## 🎯 Objective
+This project analyzes 120 years of Olympic history to understand:
+- **Who competes** (athlete participation)
+- **Who wins** (medal achievements)
+- **Which sports dominate** (top medal-producing sports)
 
-To visualize data that will help readers understand how countries have performed historically in the summer Olympic Games and show historical performance for different countries, with the possibility to select your own country.
+It enables analysts and federations to derive insights from global Olympic data and identify patterns across sports, geography, and gender.
 
-Competitors and Medals
+---
 
-Number of Competitors: 116,776
-Medals Awarded: 34,088
+## 📊 Dashboard Preview
 
-Gender Distribution
+![Olympic Dashboard](screenshots/Dashboard_Main.png)
 
-Among Competitors:
+> Interactive filters allow users to drill down by Year, Nation, Sport, or Competitor to analyze performance.
 
-Male: 76%
-Female: 24%
+---
 
-Among Medal Recipients:
+## 🗂 Data and Scope
 
-Male: 77%
-Female: 23%
+| Column | Description |
+|--------|-------------|
+| `Unique ID` | Unique identifier per athlete entry |
+| `Competitor Name` | Athlete name |
+| `Sex` | Male / Female |
+| `Nation Code` | Country code (USA, IND, AUS, etc.) |
+| `Year` | Year of Olympic Games |
+| `Season` | Summer / Winter |
+| `Sport` | Sport category (Swimming, Athletics, etc.) |
+| `Event` | Specific competition within the sport |
+| `Medal` | Gold, Silver, Bronze, or Not Registered |
+
+> Each row = one athlete participating in a specific event, in a specific Olympic year.
+
+---
+
+## ✅ Metrics and Definitions
+
+| Metric | Definition |
+|--------|------------|
+| **Total Competitors** | Total number of athletes across all Olympics |
+| **Total Medals** | Count of Gold, Silver, and Bronze medals |
+| **Medals by Sport** | Which sports generate the most medals |
+| **Medals by Competitor** | Medal tally per athlete, sorted descending |
+| **Medals by Year** | Trend of medals awarded over time |
+| **Medals by Gender** | Medal split between male and female athletes |
+| **Competitors by Gender** | Participation distribution by gender |
+
+---
+
+## 📈 Insights From Dashboard (From Each Visual)
+
+### 🧍 Participation Insights
+- **Total Competitors:** `116,776+`
+- **Gender Split**
+  - Male: **~75.29%**
+  - Female: **~24.71%**
+
+> Female participation improves significantly after the 1980s.
+
+---
+
+### 🏅 Medal Insights
+- **Total Medals Awarded:** `34,088+`
+- **Medal Share by Gender**
+  - Male: **72.3%**
+  - Female: **27.7%**
+
+> Medal distribution follows participation trends — more participation → more medals.
+
+---
+
+### 🥇 Top Sports by Medal Count (Stacked Horizontal Bar Chart)
+
+| Rank | Sport | Insight |
+|------|--------|---------|
+| 1 | **Athletics** | Highest medal contribution in Olympic history |
+| 2 | **Swimming** | Dominates gold and silver totals |
+| 3 | **Gymnastics / Rowing** | Strong consistency in medal outcomes |
+
+> Athletics + Swimming together represent the majority of Olympic medals.
+
+---
+
+### 👤 Top Medal-Winning Athletes (Stacked Chart by Competitor)
+- **Michael Phelps** leads with the highest number of total medals, mostly **gold**.
+- Other athletes show mixed medal stacks (Gold/Silver/Bronze).
+
+> Phelps alone has more medals than many countries.
+
+---
+
+### 📈 Historical Performance Trend (Line Chart)
+- Medal volume grows consistently from **1896 → present**
+- Sharp medal increase after **1980** due to:
+  - More count
+
